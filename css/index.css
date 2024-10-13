@@ -1,0 +1,341 @@
+body {
+    background-color: #021c3a;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    background-color: #022348;
+}
+
+.btn-custom {
+    background-color: #f39c12;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #e67e22;
+}
+
+.works-with img {
+    width: 50px; /* Adjust the size of the logos */
+    margin: 0 10px;
+}
+
+.navbar {
+    background-color: #090909;
+}
+
+.navbar:hover {
+    background-color: #fff;
+}
+
+.navbar:hover .nav-link {
+    color: #000; /* Change text color to black when hovered */
+}
+
+.navbar:hover .navbar-brand {
+    color: #000; /* Change brand color to black when hovered */
+}
+
+.nav-link {
+    color: #f2eeee; /* Default link text color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+}
+
+.nav-link:hover {
+    color: #050f1a; /* Change text color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+    text-shadow: 0 0 5px rgba(10, 15, 19, 0.5); /* Add a text shadow */
+}
+
+.btn-custom {
+    background-color: #FFA500; /* Yellow color for the "Sign Up For Free" button */
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #e67e22; /* Change background color on hover */
+}
+
+.ml-auto {
+    margin-left: auto; /* Aligns items to the right */
+}
+
+.div-right {
+    margin-right: 50px !important; /* Adds margin to the right */
+}
+
+.navbar-brand {
+    font-size: 1.8em; /* Make the brand text larger */
+    font-weight: bold; /* Bold the brand */
+    color: #f9f3f3; /* Set default text color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    margin-left: 10px; /* Adds a bit of margin to the left */
+}
+
+.navbar-brand:hover {
+    color: #FFA500; /* Yellow brand color on hover */
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Adjust logo size */
+    margin-right: 10px; /* Add space between logo and text */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #0b0a54;
+    color: white;
+}
+
+.works-with {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    margin-top: 10px; /* Add top margin */
+}
+
+.logo-container img {
+    width: 50px; /* Logo size */
+    background-color: white; /* Set logo background color */
+    border-radius: 15%;
+}
+
+.text {
+    margin-left: 90px;
+}
+
+/* Footer styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #282525;
+    padding: 40px 0;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.footer-section a {
+    color: #FFC312;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #FFC312;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags a {
+    background-color: #555;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.tags a:hover {
+    background-color: #FFC312;
+    color: #000;
+}
+
+.subscribe form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe form input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    flex: 1;
+    background-color: #555;
+    color: #fff;
+}
+
+.subscribe form button {
+    padding: 10px;
+    background-color: #FFC312;
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+}
+
+.subscribe form button:hover {
+    background-color: #fff;
+    color: #FFC312;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #FFC312;
+}
+
+/* Slide container */
+.slide-container {
+    padding: 40px;
+    background-color: #141414;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* Main content styling */
+.main-content {
+    color: white;
+}
+
+/* Slide container */
+.slide-container {
+    background-color: #f0efef;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Slide title */
+.slide-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Features section - Vertically aligned */
+.all-feature {
+    display: flex;
+    flex-direction: column; /* Align features vertically */
+    justify-content: flex-start; /* Start from the top */
+    gap: 20px; /* Add space between each feature */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; /* Limit the width for better readability */
+}
+
+/* Feature styling */
+.feature {
+    display: flex;
+    gap: 10px; /* Space between icon and text */
+    margin-bottom: 20px;
+}
+
+/* Green tick icon styling */
+.green-tick {
+    color: green;
+    font-size: 40px; /* Adjust the size of the tick icon */
+}
+
+/* Feature title */
+.feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    display: flex
+}
+
+/* Feature description */
+.feature-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+    
+.feature {
+    display: flex;
+    align-items: flex-start; /* Align icon and text at the top */
+    gap: 10px; /* Space between the icon and text */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.feature-icon {
+    font-size: 24px;
+    margin-top: 3px; /* Adjust the vertical alignment */
+    color: green;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Align all text inside feature-content to the left */
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left; /* Align the title to the left */
+}
+
+.feature-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0px; /* Ensure no extra top margin to align with the title */
+    text-align: left; /* Align description text to the left */
+}
