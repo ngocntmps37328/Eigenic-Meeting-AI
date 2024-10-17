@@ -31,56 +31,56 @@ body {
 }
 
 .navbar:hover .nav-link {
-    color: #000; /* Change text color to black when hovered */
+    color: #000; 
 }
 
 .navbar:hover .navbar-brand {
-    color: #000; /* Change brand color to black when hovered */
+    color: #000;
 }
 
 .nav-link {
-    color: #f2eeee; /* Default link text color */
-    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+    color: #f2eeee; 
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .nav-link:hover {
-    color: #050f1a; /* Change text color on hover */
-    transform: scale(1.1); /* Slightly enlarge the link on hover */
-    text-shadow: 0 0 5px rgba(10, 15, 19, 0.5); /* Add a text shadow */
+    color: #050f1a; 
+    transform: scale(1.1); 
+    text-shadow: 0 0 5px rgba(10, 15, 19, 0.5);
 }
 
 .btn-custom {
-    background-color: #FFA500; /* Yellow color for the "Sign Up For Free" button */
+    background-color: #FFA500; 
     color: white;
 }
 
 .btn-custom:hover {
-    background-color: #e67e22; /* Change background color on hover */
+    background-color: #e67e22; 
 }
 
 .ml-auto {
-    margin-left: auto; /* Aligns items to the right */
+    margin-left: auto; 
 }
 
 .div-right {
-    margin-right: 50px !important; /* Adds margin to the right */
+    margin-right: 50px !important; 
 }
 
 .navbar-brand {
-    font-size: 1.8em; /* Make the brand text larger */
-    font-weight: bold; /* Bold the brand */
-    color: #f9f3f3; /* Set default text color */
-    transition: color 0.3s ease; /* Smooth transition for color change */
-    margin-left: 10px; /* Adds a bit of margin to the left */
+    font-size: 1.8em; 
+    font-weight: bold; 
+    color: #f9f3f3; 
+    transition: color 0.3s ease; 
+    margin-left: 10px; 
 }
 
 .navbar-brand:hover {
-    color: #FFA500; /* Yellow brand color on hover */
+    color: #FFA500; 
 }
 
 .navbar-brand img {
-    max-height: 40px; /* Adjust logo size */
-    margin-right: 10px; /* Add space between logo and text */
+    max-height: 40px; 
+    margin-right: 10px; 
 }
 
 .btn-outline-secondary:hover {
@@ -89,14 +89,14 @@ body {
 }
 
 .works-with {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
-    margin-top: 10px; /* Add top margin */
+    display: flex;
+    align-items: center; 
+    margin-top: 10px;
 }
 
 .logo-container img {
-    width: 50px; /* Logo size */
-    background-color: white; /* Set logo background color */
+    width: 50px; 
+    background-color: white; 
     border-radius: 15%;
 }
 
@@ -268,28 +268,28 @@ h1 {
     color: #333;
 }
 
-/* Features section - Vertically aligned */
+
 .all-feature {
     display: flex;
-    flex-direction: column; /* Align features vertically */
-    justify-content: flex-start; /* Start from the top */
-    gap: 20px; /* Add space between each feature */
+    flex-direction: column; 
+    justify-content: flex-start;
+    gap: 20px; 
     margin-left: auto;
     margin-right: auto;
-    max-width: 600px; /* Limit the width for better readability */
+    max-width: 600px; 
 }
 
 /* Feature styling */
 .feature {
     display: flex;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px; 
     margin-bottom: 20px;
 }
 
 /* Green tick icon styling */
 .green-tick {
     color: green;
-    font-size: 40px; /* Adjust the size of the tick icon */
+    font-size: 40px;
 }
 
 /* Feature title */
@@ -310,32 +310,58 @@ h1 {
     
 .feature {
     display: flex;
-    align-items: flex-start; /* Align icon and text at the top */
-    gap: 10px; /* Space between the icon and text */
-    text-align: left; /* Ensure text is aligned to the left */
+    align-items: flex-start; 
+    gap: 10px; 
+    text-align: left;
 }
 
 .feature-icon {
     font-size: 24px;
-    margin-top: 3px; /* Adjust the vertical alignment */
+    margin-top: 3px; 
     color: green;
 }
 
 .feature-content {
     display: flex;
     flex-direction: column;
-    text-align: left; /* Align all text inside feature-content to the left */
+    text-align: left; 
 }
 
 .feature-title {
     font-size: 18px;
     font-weight: bold;
-    text-align: left; /* Align the title to the left */
+    text-align: left; 
 }
 
 .feature-description {
     font-size: 16px;
     color: #666;
-    margin-top: 0px; /* Ensure no extra top margin to align with the title */
-    text-align: left; /* Align description text to the left */
+    margin-top: 0px; 
+    text-align: left; 
+}
+/* Customize Download Extension Button */
+.btn-warning {
+    background-color: #fbbd08; /* Màu vàng */
+    color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.btn-warning:hover {
+    background-color: #f5a623; 
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Icon Styling */
+.btn-warning i {
+    font-size: 20px;
 }

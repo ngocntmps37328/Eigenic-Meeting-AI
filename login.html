@@ -2,31 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="364270926768-b0icah66voikdue98g3igtocthsbt60h.apps.googleusercontent.com">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/styles.css"> <!-- Custom CSS -->
-    <title>Eigenic</title> 
+    <title>Eigenic</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script> <!-- Google Identity Services -->
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script> <!-- JWT Decode Library -->
+</head>
 <body>
-        <div class="d-flex justify-content-center h-100">
-                <div class="login-container">
-                    <h1>Automate your meeting</h1>
-                    <p>Transcribe, summarize, search, and analyze all your voice conversations.</p>
-                
-                    <a href="#" class="btn btn-custom google-btn">
-                        <i class="fab fa-google"></i>
-                        Continue with Google
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                
-                    <a href="#" class="btn btn-custom microsoft-btn">
-                        <i class="fab fa-microsoft"></i>
-                        Continue with Microsoft
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#" class="footer-link">Why does Eigenic require access to my calendar?</a>
+    <div class="d-flex justify-content-center h-100">
+        <div class="login-container">
+            <h1>Automate your meeting notes</h1>
+            <p>Transcribe, summarize, search, and analyze all your voice conversations.</p>
+
+            <!-- Google Login Button -->
+
+            <div id="my-signin2"></div>
+            <script>
+                function onSuccess(googleUser) {
+                  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                }
+                function onFailure(error) {
+                  console.log(error);
+                }
+                function renderButton() {
+                  gapi.signin2.render('my-signin2', {
+                    'scope': 'profile email',
+                    'width': 420,
+                    'height': 50,
+                    'longtitle': true,
+                    'theme': 'dark',
+                    'onsuccess': onSuccess,
+                    'onfailure': onFailure
+                  });
+                }
+              </script>
+
+            <!-- Microsoft Login Button -->
+            <a href="#" class="btn microsoft-btn mt-2 " >
+                <div class="icon-wrapper me-5" >
+                    <i class="fab fa-windows"></i>
                 </div>
+              Continue with Microsoft
+            </a>
+            <a href="#" class="footer-link">Why does Eigenic require access to my calendar?</a>
         </div>
+    </div>
+
+    <script>
+        // Xử lý phản hồi khi người dùng đăng nhập thành công
+        function handleCredentialResponse(response) {
+            const user = jwt_decode(response.credential);
+            console.log("User Info:", user);
+            alert(`Welcome, ${user.name}!`);
+        }
+
+        // Khởi tạo Google Identity Services SDK
+        window.onload = () => {
+            google.accounts.id.initialize({
+                client_id: '364270926768-b0icah66voikdue98g3igtocthsbt60h.apps.googleusercontent.com',
+                callback: handleCredentialResponse
+            });
+            google.accounts.id.renderButton(
+                document.querySelector('.my-signin2'),
+                { theme: 'outline', size: 'large' }
+            );
+            google.accounts.id.prompt(); 
+        };
+        
+    </script>
+ <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -1,0 +1,216 @@
+body {
+    background-color: #f3f4ff;
+    }
+    
+    .sidebar {
+    background-color: #f0effc;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+    .progress {
+    height: 6px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    }
+    
+    .progress-bar {
+    background-color: #5997e2;
+    }
+    
+    .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    }
+    
+    .menu-item i {
+    margin-right: 8px;
+    color: #120c8b;
+    }
+    
+    footer {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    }
+    
+    .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng nổi cho avatar */
+    background-color: #f0f0f0; /* Nền tạm thời nếu không có ảnh */
+    }
+    
+    .user-info {
+    margin-top: 10px;
+    }
+    
+    .user-name {
+    color: #333;
+    }
+    
+    .text-muted {
+    color: #6c6c6c !important;
+    font-size: 16px;
+    }
+    
+    .menu-item i {
+    font-size: 18px;
+    color: #5997e2;
+    }
+    
+    .menu-item a {
+    font-size: 16px;
+    }
+    .custom-hr {
+    border: none; /* Xóa viền mặc định */
+    height: 2px; /* Độ dày của đường kẻ */
+    background-color: #5997e2; /* Màu sắc */
+    width: 100%; /* Chiều rộng đường kẻ */
+    margin: 20px auto; /* Căn giữa và tạo khoảng cách */
+    border-radius: 5px; /* Tạo góc bo cho đường kẻ */
+    }
+    .btn-purple {
+        background-color: #6c63ff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .recording-item {
+        background-color: #eef2fa;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .recording-item:hover {
+        background-color: #e0e4ff;
+        transform: scale(1.02);
+    }
+    
+    .button-group button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    input[type="text"] {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    .recording-item {
+        background-color: #e0e6ff; /* Light purple background */
+        border-radius: 12px;
+        margin-top: 20px;;
+    }
+    
+    .button-group .btn {
+        border-radius: 20px; /* Rounded buttons */
+    }
+    
+    .btn-secondary {
+        background-color: #6b5bff; /* Purple button for "Xem" */
+        border: none;
+    }
+    
+    .btn-outline-secondary {
+        background-color: white;
+        color: black;
+        border: 1px solid #ccc;
+    }
+    
+    .btn-outline-danger {
+        color: #ff5c5c;
+        border: 1px solid #ff5c5c;
+    }
+    .btn {
+        border-radius: 20px; /* Rounded buttons */
+        padding: 10px 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn-primary {
+        background-color: #6b5bff; /* Purple color */
+        color: white;
+        border: none;
+    }
+    
+    .btn-warning {
+        background-color: #ffa500; /* Orange color */
+        color: white;
+        border: none;
+    }
+    
+    .btn-purple {
+        background-color: #6b5bff; /* Purple color */
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; /* Circular button */
+    }
+    
+    .button-group {
+        gap: 10px; /* Space between buttons */
+    }
+    .search-filter {
+        background-color: #f0f4ff;
+        border-radius: 12px;
+        padding: 10px 15px;
+    }
+
+    .form-control {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: none;
+    }
+
+    .date-filter input {
+        width: 130px;
+        cursor: pointer;
+    }
+    .mic-button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #6b5bff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
+    }
+
+    .mic-button:hover {
+        background-color: #5848e6;
+    }
+
+    .mic-button.active {
+        background-color: red;
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .record-status {
+        margin: 20px;
+        font-size: 18px;
+        color: red;
+    }
+    

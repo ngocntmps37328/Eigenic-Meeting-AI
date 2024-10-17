@@ -1,0 +1,181 @@
+body {
+    background-color: #f7f7f7;
+}
+
+.audio-controls {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    margin-top: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tabs button {
+    border: none;
+    background: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    color: #6b5bff;
+    border-bottom: 2px solid #6b5bff;
+}
+
+.task-list {
+    background-color: #f0f4ff;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    border-left: 1px solid #e0e0e0;
+    padding-left: 20px;
+}
+
+.export-buttons button {
+    margin-right: 10px;
+}
+
+.summary-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+        /* Tabs Styling */
+        .tabs-container {
+            border-bottom: 1px solid #e0e0e0;
+            margin-top: 20px;
+        }
+
+        .tabs-container button {
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            color: #6c757d;
+            margin-right: 15px;
+            padding: 10px 0;
+            position: relative;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .tabs-container button.active {
+            color: #1a1a1a;
+        }
+
+        .tabs-container button.active::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #6b5bff;
+        }
+
+        .tab-content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+          /* Tab Content Visibility */
+          .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tabs-container button {
+            border: none;
+            background: none;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .tabs-container button.active {
+            color: #6b5bff;
+            border-bottom: 2px solid #6b5bff;
+        }
+
+        .sidebar {
+            border-left: 1px solid #e0e0e0;
+            padding-left: 20px;
+            position: sticky;
+            top: 20px;
+        }
+        .todo-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 15px;
+        }
+
+        .todo-list li {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .todo-list li.completed {
+            background-color: #d4edda;
+        }
+
+        .todo-list input[type="text"] {
+            border: none;
+            outline: none;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        .todo-list input:focus {
+            border-bottom: 1px solid #6b5bff;
+        }
+
+        .remove-task {
+            color: #dc3545;
+            cursor: pointer;
+            transition: transform 0.2s, color 0.3s;
+        }
+
+        .remove-task:hover {
+            color: #ff0000;
+            transform: scale(1.2);
+        }
+
+        .todo-checkbox {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            border: 2px solid #6c757d;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: transparent;
+        }
+
+        .todo-checkbox.checked {
+            background-color: #28a745;
+            color: white;
+        }
+    

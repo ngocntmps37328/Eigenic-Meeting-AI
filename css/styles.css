@@ -11,14 +11,14 @@ html, body {
 
 .login-container {
     text-align: center;
-    background-color: rgba(43, 43, 43, 0.8); /* Slight transparency with RGBA */
+    background-color: rgba(43, 43, 43, 0.8); 
     padding: 40px;
     border-radius: 10px;
     width: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    transform: translate(-50%, -50%); 
 }
 
 h1 {
@@ -44,7 +44,6 @@ p {
     background-color: #333;
     color: #fff;
     padding: 12px 15px;
-    border-radius: 5px;
     margin-bottom: 15px;
     width: 100%;
     font-size: 16px;
@@ -53,117 +52,10 @@ p {
     position: relative;
 }
 
-/* Google Button Styling */
-.google-btn {
-    background-color: #fff; /* Background màu trắng */
-    color: #000; /* Text màu đen */
-    border: 1px solid #dadce0;
-}
-
-.google-btn i {
-    color: #4285F4; /* Màu xanh chủ đạo của Google */
-}
-
-.google-btn:hover {
-    background-color: #f5f5f5;
-}
-/* Hiệu ứng hover nổi bật */
-.google-btn {
-    background-color: #fff; /* Nền trắng */
-    color: #000; /* Text màu đen */
-    border: 1px solid #dadce0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
-    transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
-}
-
-.google-btn:hover {
-    background-color: #4285F4; /* Thay đổi nền sang màu xanh Google */
-    color: #fff; /* Đổi màu chữ thành trắng */
-    transform: scale(1.05); /* Phóng to nhẹ */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Bóng đổ rõ rệt hơn khi hover */
-    border: none; /* Loại bỏ đường viền */
-}
-
-.google-btn i {
-    transition: all 0.3s ease; /* Thêm hiệu ứng cho icon */
-}
-
-.google-btn:hover i {
-    color: #fff; /* Đổi màu icon thành trắng khi hover */
-}
-
-/* Tạo mũi tên di chuyển nhẹ khi hover */
-.arrow {
-    font-size: 24px;
-    color: #000;
-    transition: transform 0.3s ease; /* Thêm hiệu ứng di chuyển */
-}
-
-.google-btn:hover .arrow {
-    transform: translateX(5px); /* Mũi tên di chuyển sang phải khi hover */
-    color: #fff; /* Đổi màu mũi tên thành trắng */
-}
-
-/* Microsoft Button Styling */
-.microsoft-btn {
-    background-color: #fff; /* Nền trắng */
-    color: #000; /* Chữ đen */
-    border: 1px solid #dadce0;
-}
-
-.microsoft-btn i {
-    color: #F25022; /* Màu cam chủ đạo của Microsoft */
-}
-
-.microsoft-btn:hover {
-    background-color: #f5f5f5;
-}
-/* Hiệu ứng hover nổi bật cho Microsoft */
-.microsoft-btn {
-    background-color: #fff; /* Nền trắng */
-    color: #000; /* Text màu đen */
-    border: 1px solid #dadce0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
-    transition: all 0.3s ease; /* Hiệu ứng chuyển động mượt mà */
-}
-
-.microsoft-btn:hover {
-    background-color: #F25022; /* Thay đổi nền sang màu xanh Microsoft */
-    color: #fff; /* Đổi màu chữ thành trắng */
-    transform: scale(1.05); /* Phóng to nhẹ */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Bóng đổ rõ rệt hơn khi hover */
-    border: none; /* Loại bỏ đường viền */
-}
-
-.microsoft-btn i {
-    transition: all 0.3s ease; /* Thêm hiệu ứng cho icon */
-}
-
-.microsoft-btn:hover i {
-    color: #fff; /* Đổi màu icon thành trắng khi hover */
-}
-
-/* Tạo mũi tên di chuyển nhẹ khi hover */
-.arrow {
-    font-size: 24px;
-    color: #000;
-    transition: transform 0.3s ease; /* Thêm hiệu ứng di chuyển */
-}
-
-.microsoft-btn:hover .arrow {
-    transform: translateX(5px); /* Mũi tên di chuyển sang phải khi hover */
-    color: #fff; /* Đổi màu mũi tên thành trắng */
-}
-
 /* Icon Size and Positioning */
 .btn-custom i {
     font-size: 24px;
     margin-right: 15px;
-}
-
-.arrow {
-    font-size: 24px;
-    color: #000; /* Màu đen */
 }
 
 .footer-link {
@@ -174,4 +66,61 @@ p {
 
 .footer-link:hover {
     color: #bfbfbf;
+}
+
+
+.microsoft-btn:hover {
+    background-color: #f5f5f5; 
+    box-shadow: 0px 2px 4px rgba(60, 64, 67, 0.3);
+}
+.microsoft-btn:active {
+    box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3); 
+}
+
+ .microsoft-btn i {
+    font-size: 24px;
+    transition: color 0.3s ease; 
+}
+
+.microsoft-btn {
+    width: 420px;
+    height: 50px;
+    border-radius: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px; /* Space between icon and text */
+    padding: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    background-color:white;
+}
+/* Icon Wrapper */
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+
+}
+
+/* Microsoft Icon Styling */
+.microsoft-btn i {
+    color: #0078D4; /* Microsoft blue */
+    font-size: 24px;
+}
+
+.microsoft-btn:hover {
+    background-color:#eaf1f7;
+    box-shadow: 0px 2px 4px rgba(60, 64, 67, 0.3); /* Light shadow on hover */
+    color:#4285F4;
+}
+
+
+.microsoft-btn:active {
+    box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3); /* Reduced shadow on click */
 }
