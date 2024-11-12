@@ -141,7 +141,7 @@ body {
         .todo-list input[type="text"] {
             border: none;
             outline: none;
-            width: 100%;
+            width: 700px;
             background-color: transparent;
         }
 
@@ -178,4 +178,28 @@ body {
             background-color: #28a745;
             color: white;
         }
-    
+        .translation-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .translation-header {
+            font-weight: bold;
+            color: #444;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        
+        
+        .translation-text {
+            margin-top: 8px;
+            line-height: 1.6;
+            color: #333;
+            font-size: 14px;
+            /* Xóa thuộc tính text-indent */
+        }
+        
+        

@@ -213,4 +213,6 @@ body {
         font-size: 18px;
         color: red;
     }
-    
+    .ng-binding{
+        margin-bottom: 10px;
+    }
